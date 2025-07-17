@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situação Terapêutica - Apresentação Familiar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container flex justify-between items-center">
+            <div class="header-info">
+                <h1 class="header-title">Situação Terapêutica</h1>
+                <p class="date">17 de Julho de 2025</p>
+            </div>
+            <button id="printBtn" class="btn btn--secondary btn--sm">🖨️ Imprimir Resumo</button>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="container">
+            <ul class="nav-menu flex gap-8">
+                <li><button class="nav-item active" data-section="perfil">Perfil Emocional</button></li>
+                <li><button class="nav-item" data-section="riscos">Riscos e Vulnerabilidades</button></li>
+                <li><button class="nav-item" data-section="comportamentos">Comportamentos Cotidianos</button></li>
+                <li><button class="nav-item" data-section="estrategias">Estratégias Terapêuticas</button></li>
+                <li><button class="nav-item" data-section="ferramentas">Ferramentas de Apoio</button></li>
+                <li><button class="nav-item" data-section="proximos">Próximos Passos</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content container">
+        <!-- Seção Perfil Emocional -->
+        <section class="section active" id="perfil">
+            <div class="section-header">
+                <h2>👤 Perfil Emocional</h2>
+                <p class="section-description">Características e diagnóstico atual</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card collapsible">
+                    <div class="card-header flex justify-between items-center">
+                        <h3>Informações Básicas</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-item"><span class="label">Idade:</span> 13 anos</div>
+                        <div class="info-item"><span class="label">Diagnóstico:</span> Ideação suicida desde 2023</div>
+                    </div>
+                </div>
+
+                <div class="card collapsible">
+                    <div class="card-header flex justify-between items-center">
+                        <h3>Comportamento Autolesivo</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="timeline-item">
+                            <h4>2023</h4>
+                            <p>Primeiro corte no pulso</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>2024</h4>
+                            <p>Novos episódios como tentativa de alívio da dor emocional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card collapsible">
+                    <div class="card-header flex justify-between items-center">
+                        <h3>Traços Evidentes</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="card-body">
+                        <ul class="traits-list">
+                            <li>Dificuldade severa de regulação emocional</li>
+                            <li>Baixíssima tolerância à frustração</li>
+                            <li>Provável hipersensibilidade ao ambiente e eventos cotidianos</li>
+                            <li>Possível uso do celular como fuga e anestesia emocional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Riscos e Vulnerabilidades -->
+        <section class="section" id="riscos">
+            <div class="section-header">
+                <h2>⚠️ Riscos e Vulnerabilidades</h2>
+                <p class="section-description">Fatores de risco identificados</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card collapsible danger">
+                    <div class="card-header flex justify-between items-center"><h3>Mecanismo Emocional</h3><span class="toggle-icon">+</span></div>
+                    <div class="card-body"><ul><li>Mecanismo de sobrevivência emocional desorganizado</li><li>Pequenas frustrações podem desencadear picos de dor psíquica</li></ul></div>
+                </div>
+
+                <div class="card collapsible warning">
+                    <div class="card-header flex justify-between items-center"><h3>TikTok</h3><span class="toggle-icon">+</span></div>
+                    <div class="card-body"><ul><li>Gatilhos emocionais e comparações</li><li>Cyberbullying</li><li>Cultura de autolesão</li></ul></div>
+                </div>
+
+                <div class="card collapsible warning">
+                    <div class="card-header flex justify-between items-center"><h3>Roblox</h3><span class="toggle-icon">+</span></div>
+                    <div class="card-body"><p>Escape dissociativo, principalmente em isolamento social</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Comportamentos Cotidianos -->
+        <section class="section" id="comportamentos">
+            <div class="section-header">
+                <h2>🏠 Comportamentos Cotidianos</h2>
+                <p class="section-description">Padrões observados no dia a dia</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card collapsible">
+                    <div class="card-header flex justify-between items-center"><h3>Comportamentos Observados</h3><span class="toggle-icon">+</span></div>
+                    <div class="card-body"><ul><li>Grande dificuldade em assumir responsabilidades básicas</li><li>Não cuida da própria higiene pessoal</li><li>Refeições na cama, deixando louça no local</li><li>Solicita que tudo seja trazido para si</li><li>Evita atividades mínimas do dia a dia</li></ul></div>
+                </div>
+                <div class="card collapsible">
+                    <div class="card-header flex justify-between items-center"><h3>Responsabilidades Não Executadas</h3><span class="toggle-icon">+</span></div>
+                    <div class="card-body"><ul><li>Cuidar da higiene pessoal</li><li>Escovar os dentes</li><li>Tomar refeições fora da cama</li><li>Recolher utensílios</li><li>Tomar remédios nos horários</li><li>Manter banheiro organizado</li><li>Estudar</li><li>Participar de consultas</li></ul></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Estratégias Terapêuticas -->
+        <section class="section" id="estrategias">
+            <div class="section-header">
+                <h2>🎯 Estratégias Terapêuticas</h2>
+                <p class="section-description">Abordagens recomendadas</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card collapsible success"><div class="card-header flex justify-between items-center"><h3>Diagnóstico e Tratamento</h3><span class="toggle-icon">+</span></div><div class="card-body"><ul><li>Acompanhamento psicológico (TCC, DBT ou ACT)</li><li>Avaliação psiquiátrica</li><li>Reforço em casa</li></ul></div></div>
+                <div class="card collapsible success"><div class="card-header flex justify-between items-center"><h3>Redução de Estímulos Digitais</h3><span class="toggle-icon">+</span></div><div class="card-body"><ul><li>Evitar interrupção brusca</li><li>Substituição + negociação</li><li>Ilhas de contato real</li></ul></div></div>
+                <div class="card collapsible success"><div class="card-header flex justify-between items-center"><h3>Comunicação Familiar</h3><span class="toggle-icon">+</span></div><div class="card-body"><ul><li>Escuta ativa (CNV)</li><li>Frases acolhedoras</li><li>Validação do sofrimento</li></ul></div></div>
+                <div class="card collapsible success"><div class="card-header flex justify-between items-center"><h3>Propósito e Identidade</h3><span class="toggle-icon">+</span></div><div class="card-body"><ul><li>Atividades que ela ame</li><li>Projetos de longo prazo</li><li>Rede afetiva</li></ul></div></div>
+            </div>
+        </section>
+
+        <!-- Seção Ferramentas de Apoio -->
+        <section class="section" id="ferramentas">
+            <div class="section-header"><h2>🛠️ Ferramentas de Apoio</h2><p class="section-description">Recursos recomendados</p></div>
+            <div class="cards-grid">
+                <div class="card collapsible tool"><div class="card-header flex justify-between items-center"><h3>Daylio Journal</h3><span class="toggle-icon">+</span></div><div class="card-body"><p>Diário de humor gamificado</p></div></div>
+                <div class="card collapsible tool"><div class="card-header flex justify-between items-center"><h3>Youper</h3><span class="toggle-icon">+</span></div><div class="card-body"><p>IA conversacional para saúde emocional</p></div></div>
+                <div class="card collapsible tool"><div class="card-header flex justify-between items-center"><h3>Calm Harm</h3><span class="toggle-icon">+</span></div><div class="card-body"><p>App específico para autolesão</p></div></div>
+                <div class="card collapsible tool"><div class="card-header flex justify-between items-center"><h3>Woebot</h3><span class="toggle-icon">+</span></div><div class="card-body"><p>Apoio terapêutico diário por IA (TCC)</p></div></div>
+            </div>
+        </section>
+
+        <!-- Seção Próximos Passos -->
+        <section class="section" id="proximos">
+            <div class="section-header"><h2>👣 Próximos Passos</h2><p class="section-description">Implementação prática</p></div>
+            <div class="cards-grid">
+                <div class="card next-step"><div class="card-header flex justify-between items-center"><h3>Metas Pequenas</h3><span class="toggle-icon">+</span></div><div class="card-body"><p>Levar 1 copo até a cozinha</p></div></div>
+                <div class="card next-step"><div class="card-header flex justify-between items-center"><h3>Lembretes Visuais</h3><span class="toggle-icon">+</span></div><div class="card-body"><p>Criar lembretes gentis</p></div></div>
+                <div class="card next-step"><div class="card-header flex justify-between items-center"><h3>Oferecer Escolhas</h3><span class="toggle-icon">+</span></div><div class="card-body"><p>Apresentar opções</p></div></div>
+                <div class="card next-step"><div class="card-header flex justify-between items-center"><h3>Elogiar Esforço</h3><span class="toggle-icon">+</span></div><div class="card-body"><p>Reconhecer tentativas</p></div></div>
+                <div class="card next-step"><div class="card-header flex justify-between items-center"><h3>Recompensas</h3><span class="toggle-icon">+</span></div><div class="card-body"><p>Sistema de reconhecimento</p></div></div>
+                <div class="card next-step"><div class="card-header flex justify-between items-center"><h3>Tom Acolhedor</h3><span class="toggle-icon">+</span></div><div class="card-body"><p>Comunicação empática sem críticas</p></div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container"><p>Confidencial - Uso exclusivo em sessão de terapia familiar</p></div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
